@@ -1,14 +1,45 @@
 @startuml
 
 !theme plain
+
+skinparam {
+ noteBackgroundColor lightyellow
+}
+
 title Facade
 
-participant client
-participant "    facade   " as f
+object Client
+class "Facade" as F
 
-client -> f
-f -> class3 
-f -> class2
-f -> class1
+class F {
+ -class1
+ -class2
+ -class3
+ +operation()
+}
+
+note right of F::operation
+ this.class1.method1()
+ this.class2.method2()
+ this.class3.method3()
+end note
+
+class Class1 {
+ +method1()
+}
+
+class Class2 {
+ +method2()
+}
+
+class Class3 {
+ +method3()
+}
+
+
+Client -> F
+F --> Class1
+F --> Class2
+F --> Class3
 
 @enduml
