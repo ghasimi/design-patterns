@@ -1,0 +1,14 @@
+@startuml
+
+!theme plain
+title Facade
+
+participant client
+participant "    facade   " as f
+
+client -> f
+f -> class3 
+f -> class2
+f -> class1
+
+@enduml
