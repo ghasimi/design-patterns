@@ -23,5 +23,9 @@ Towards learning [design patterns](https://en.wikipedia.org/wiki/Design_Patterns
 ```
 
 ### Facade
+ 
+![facade uml](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/ghasimi/design-patterns/main/uml/facade.txt)
 
-![facade uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/ghasimi/design-patterns/main/uml/facade.txt)
+### Adapter
+
+![adapter uml](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/ghasimi/design-patterns/main/uml/adapter.txt)
