@@ -1,6 +1,11 @@
 @startuml
 
 !theme plain
+
+skinparam {
+ noteBackgroundColor lightyellow
+}
+
 title Adapter
 
 object "Client" as C
