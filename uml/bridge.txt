@@ -4,6 +4,9 @@
 skinparam {
   noteBackgroundColor lightYellow
 }
+
+title Bridge
+
 class "Abstraction" as A
 class "RefinedAbstraction" as A1
 
@@ -31,10 +34,11 @@ class IY {
   + func() 
 }
 
+client --> A
 A o- I 
 A <|-- A1 
 
-I <|-- IY 
-I <|-- IX 
+I <|.. IY 
+I <|.. IX 
 
 @enduml
