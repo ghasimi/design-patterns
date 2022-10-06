@@ -1,0 +1,40 @@
+@startuml
+
+!theme plain
+skinparam {
+  noteBackgroundColor lightYellow
+}
+class "Abstraction" as A
+class "RefinedAbstraction" as A1
+
+class "Implementer" as I
+class "ConcreteImplementerX" as IX
+class "ConcreteImplementerY" as IY
+
+class A {
+  - implementer
+  + method()
+}
+note left of A::method  
+   this.implementer.func()
+end note
+
+class I {
+  + func() 
+}
+
+class IX {
+  + func() 
+}
+
+class IY {
+  + func() 
+}
+
+A o- I 
+A <|-- A1 
+
+I <|-- IY 
+I <|-- IX 
+
+@enduml
