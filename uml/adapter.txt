@@ -1,0 +1,32 @@
+@startuml
+
+!theme plain
+title Adapter
+
+object "Client" as C
+class "Target" as T
+class "Adaptee" as Ae
+class "    Adapter   " as Ar
+
+class T {
+ + operation()
+} 
+
+class Ae {
+ + specialOperation()
+} 
+
+class Ar {
+ - adaptee 
+ + operation()
+} 
+
+C -> T
+
+T <|.. Ar
+
+note left : adaptee.specialOperation()
+
+Ar -> Ae
+
+@enduml
