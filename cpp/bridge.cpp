@@ -37,7 +37,7 @@ public:
     Display(Shape* shapePointer): _shapePointer(shapePointer){};
     virtual ~Display(){
         delete _shapePointer; 
-        print("Display deletes _shapePointer");
+        print("Display destructor deleted _shapePointer");
     };
     virtual std::string shapeDrawer() const = 0;
 };
